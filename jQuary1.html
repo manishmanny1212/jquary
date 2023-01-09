@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+      // $(document).ready(function(){
+      //   $("button").click(function(){
+      //     $("p").hide();
+      //   });
+      // });
+      //
+    </script>
+    <!-- <script>
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+</script> -->
+    <!-- <script>
+    $(document).ready(function(){
+        $("button").click(
+            function(){
+                $(".hideme").hide()
+            }
+        )
+    })
+</script> -->
+    <!-- <script>
+      $(document).ready(function () {
+        $(".btn-hide").click(function () {
+          $(".hide").hide();
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".btn-show").click(function () {
+          $(".hide").show();
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".btn-toggle").click(function () {
+          $(".p-toggle").toggle();
+        });
+      });
+    </script> -->
+
+    <!-- ---- slide script -->
+
+    <!-- <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideDown(5000);
+        });
+        $("#stop").click(function () {
+          $("#panel").stop();
+        });
+      });
+    </script> -->
+    <!-- <style> 
+        #panel, #flip {
+          padding: 5px;
+          font-size: 18px;
+          text-align: center;
+          background-color: #555;
+          color: white;
+          border: solid 1px #666;
+          border-radius: 3px;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+        </style> -->
+
+    <!-- -----callback ---- -->
+
+    <!-- <script>$(document).ready(
+            function(){
+                $(".btn").click(
+                    function(){
+                        $(".p-callback").hide(1000,function(){
+                            console.log("hello callback  btn")
+                        })
+                    }
+                )
+            }
+        )
+
+        </script> -->
+    <!-- -------chaining ----- -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#p1").slideUp(2000).slideDown(2000);
+        });
+      });
+    </script> -->
+    <!-- ------------jquary HTML------------------- -->
+    <!-- ------get html and  get text ------------- -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#btn1").click(
+                function(){
+                    alert("Text: " + $("#test").text());
+                }
+            )
+            $("#btn2").click(
+                function(){
+                    alert("html:" +$("#test").html());
+                }
+            )
+        })
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            alert("Text: " + $("#test").text());
+          });
+          $("#btn2").click(function(){
+            alert("HTML: " + $("#test").html());
+          });
+        });
+        </script> -->
+
+    <!-- ------get input value ---- -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          alert("Value: " + $("#test").val());
+        });
+      });
+    </script> -->
+
+    <!-- ....set html, val , text ..... -->
+
+    <!-- <script>
+      $(document).ready(
+          function(){
+              $("#btn1").click(
+                  function(){
+                      $("#test1").text("Hello world!");
+                  }
+              )
+              $("#btn2").click(
+                  function(){
+                      $("#test2").html("<b> hello world  </b>")
+                  }
+              )
+              $("#btn3").click(
+                function(){
+                    $("#test3").val("hello set input value ")
+                }
+              )
+          }
+      )
+    </script> -->
+  </head>
+  <body>
+    <!-- <div> <h1 >$("p").hide() -- method </h1>
+        <h2>This is a heading</h2>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        
+        <button>Click me</button>
+
+    </div> -->
+    <!-- .................................................. -->
+    <!-- <div>
+        <h1>The element Selector</h1>
+        <h2>This is a heading</h2>
+
+        <p>This is a paragraph.</p>
+        <p id="test">This is another paragraph.</p>
+
+         <button>Click me</button>
+
+
+    </div> -->
+    <!-- ................................................... -->
+    <!-- <div>jQuery Syntax For Event Methods</div>
+    
+    <p class="hideme">this is a paragraph </p>
+    <button>event click </button> -->
+
+    <!-- ................. hide and show j quary effects slide , toggle , show , hide , stop,  ..................... -->
+
+    <!-- <div>
+        hide and show j quary effects 
+    </div>
+    <p class="p-toggle">toggle the text</p>
+    <p class="hide">hide me after click  hide button button </p>
+    <button class="btn-hide">hide</button>
+    <button class="btn-show">show </button>
+    <button class="btn-toggle">toggle</button> -->
+
+    <!-- ------------------ slide --------------- -->
+    <!-- <button id="stop">Stop sliding</button>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div> -->
+
+    <!-- -----------------call back function ------------ -->
+    <!-- <p class="p-callback"> hello world </p>
+
+    <button class="btn">click me the i will console some dta </button> -->
+
+    <!-- ....... chaining ..... -->
+    <!-- <p id="p1">chaining slide up and slide down method apply using chaining</p>
+
+    <button>Click me</button> -->
+
+    <!-- ------------jquary HTML------------------- -->
+    <!-- ------get html and get text------------- -->
+    <!-- <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+   <button id="btn1">Show Text</button>
+   <button id="btn2">Show HTML</button> -->
+
+    <!-- ------get input value ---- -->
+
+    <!-- <p>Name: <input type="text" id="test"  /></p>
+
+    <button>Show Value</button> -->
+
+
+
+    <!-- .....set text,  html  val ..... -->
+    <!-- <p id="test1">This is a paragraph.</p>
+    <p id="test2">This is another paragraph.</p>
+
+    <p>Input field: <input type="text" id="test3" /></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button> -->
+    
+  </body>
+</html>
