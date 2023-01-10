@@ -215,8 +215,8 @@
         )
     </script> -->
 
-    <!-- --------------------------children()----------------- -->
-    <style>
+    <!-- --------------------------children( )  find ()----------------- -->
+    <!-- <style>
       .descendants * {
         display: block;
         border: 2px solid lightgrey;
@@ -233,7 +233,25 @@
             }
 
         )
+    </script> -->
+    <!-- ------------------jquary filtering- first(), last()----------------------- -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("div").first().css("background-color", "yellow");
+        $("div").last().css("background-color", "green");
+      });
+    </script> -->
+    <!-- --------------eq(index number)- filter()------------------ -->
+    <script>
+        $(document).ready(
+            function(){
+                $("p").eq(2).css("background-color", "green")
+                $("p").filter(".intro").css("background-color", "red")
+
+            }
+        )
     </script>
+
   </head>
   <body>
     <!-- <div> <h1 >$("p").hide() -- method </h1>
@@ -350,7 +368,7 @@
       </div>
     </div> -->
     <!-- --------------------children()- .find()---------------- -->
-    <div class="descendants" style="width: 500px">
+    <!-- <div class="descendants" style="width: 500px">
       div (current element)
       <p>
         p (child)
@@ -360,6 +378,40 @@
         p (child)
         <span>span (grandchild)</span>
       </p>
+    </div> -->
+    <!-- ------------------------------jQuery Traversing - Filtering---- first(), last(), filtering()----------------------------- -->
+
+    <h1>Welcome to My Homepage</h1>
+
+    <!-- <p>This is a paragraph.</p>
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in a div.</p>
+      <p>Another paragraph in a div.</p>
     </div>
+    <br />
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div>
+    <br />
+
+    <div style="border: 1px solid black">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div> -->
+
+
+    <!-- ------------------eq(index number) filter(), not(),---------------------- -->
+    <!-- <p>My name is Donald (index 0).</p>
+<p>Donald Duck (index 1).</p>
+<p>I live in Duckburg (index 2).</p>
+<p>My best friend is Mickey (index 3).</p>
+<p>My name is Donald.</p>
+<p class="intro">I live in Duckburg.</p>
+<p class="intro">I love Duckburg.</p>
+<p>My best friend is Mickey.</p> -->
+
   </body>
 </html>
