@@ -159,7 +159,7 @@
       )
     </script> -->
     <!-- ............Add New HTML Content----------------------- -->
-    <script>
+    <!-- <script>
         $(document).ready(
             function(){
                 $("#btn1").click(
@@ -194,6 +194,44 @@
                 )
 
             }
+        )
+    </script> -->
+
+    <!-- ---------------------tranversing -------------------- -->
+    <!-- <style>
+      .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script>
+        $(document).ready(
+            function(){
+                $("span").parent().css({"color": "red", "border": "2px solid red"});
+            }
+        )
+    </script> -->
+
+    <!-- --------------------------children()----------------- -->
+    <style>
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script>
+        $(document).ready(
+            function(){
+                $(".descendants").children().css({"color": "red", "border": "2px solid red"})
+                $("div").find("p").css({"backgroundColor":"red"})
+            }
+
         )
     </script>
   </head>
@@ -264,8 +302,6 @@
 
     <button>Show Value</button> -->
 
-
-
     <!-- .....set text,  html  val ..... -->
     <!-- <p id="test1">This is a paragraph.</p>
     <p id="test2">This is another paragraph.</p>
@@ -276,9 +312,8 @@
     <button id="btn2">Set HTML</button>
     <button id="btn3">Set Value</button> -->
 
-
     <!-- ............Add New HTML Content----------------------- -->
-    <p>This is a paragraph.</p>
+    <!-- <p>This is a paragraph.</p>
     <div id="remove-container">
         <p>hello paragraph </p>
         <div>hello child </div>
@@ -290,8 +325,41 @@
 <button id="btn3">Insert before</button>
 <button id="btn4">Insert after</button>
 <button id="btn5">remove div and its child</button>
-<button id="btn6">empty div or child </button>
+<button id="btn6">empty div or child </button> -->
 
+    <!-- ------------------jQuery Traversing------------parent(), parents() , parentsUntil()----------- -->
 
+    <!-- <div class="ancestors">
+      <div style="width: 500px">
+        div (great-grandparent)
+        <ul>
+          ul (grandparent)
+          <li>
+            li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+
+      <div style="width: 500px">
+        div (grandparent)
+        <p>
+          p (direct parent)
+          <span>span</span>
+        </p>
+      </div>
+    </div> -->
+    <!-- --------------------children()- .find()---------------- -->
+    <div class="descendants" style="width: 500px">
+      div (current element)
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
   </body>
 </html>
